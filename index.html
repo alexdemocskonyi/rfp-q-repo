@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-Powered RFP Question Search</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; }
+    #search-box { width: 100%; padding: 12px; font-size: 16px; margin-bottom: 24px; border: 1px solid #ccc; border-radius: 6px; }
+    .card { margin-bottom: 20px; padding: 16px; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; }
+    .card mark { background-color: yellow; }
+    details { margin-top: 8px; }
+    summary { cursor: pointer; font-weight: bold; }
+    ul { padding-left: 1.2em; }
+    small { color: #666; font-style: italic; }
+    .advice { margin-top: 16px; padding: 12px; background: #eef; border-radius: 6px; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
+</head>
+<body>
+  <h1>AI-Powered RFP Question Search</h1>
+  <input type="text" id="search-box" placeholder="Type at least 4 characters…" />
+  <div id="results"></div>
+  <div id="advice" class="advice"></div>
+  <script src="script.js"></script>
+</body>
+</html>
